@@ -1,0 +1,20 @@
+{
+  "name": "trial-assignments",
+  "version": "1.0.0",
+  "description": "**Front-End Developer**",
+  "main": " ",
+  "scripts": {
+    "test": " "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^4.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "gulp-postcss": "^7.0.0"
+  }
+}
