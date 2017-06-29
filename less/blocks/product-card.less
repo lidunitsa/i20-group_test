@@ -1,4 +1,47 @@
 /* block product card */
 .product-card {
-	
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: (@base-indent + 2);
+	height: 100%;
+	background: @white;
+	color: @text;	
+	&__photo {
+		width: 47.5%;
+	}	
+	&__info {
+		width: 52.5%;
+		padding-top: 50px;
+		padding-right: (@base-indent + 5);	
+	}	
+	&__title {
+		font: @font-circe-xbold;		
+		font-size: (@base-font-size * 1.85);
+		font-weight: 500;		
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin-bottom: 10px;
+	}
+	&__menu {
+		margin-bottom: (@base-indent * 2.5);
+	}
+	&__price {
+		margin-bottom: 10px;
+	}
+	&__conditions {
+		margin-bottom: (@base-indent * 2.5);
+	}
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: (@base-indent * 2);		
+	}
+	&__button {
+		flex-basis: 48%;
+	}
+	&__description {
+		margin-bottom: (@base-indent * 1.75);
+		line-height: 1.4;		
+	}
 }

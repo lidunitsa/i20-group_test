@@ -1,6 +1,11 @@
 /* block layout */
 .layout {	
-	width: 1018px;
+	width: @desktop;
 	margin: 0 auto;
-	padding: 22px;
+	height: 100%;	
+}
+@media only screen and (max-width: 1024px) {
+	.layout {
+		width: @tablet;
+	}
 }

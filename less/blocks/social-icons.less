@@ -1,0 +1,67 @@
+/* social-icons */
+.social-icons {
+	display: flex;
+	align-items: center;
+	&__title{		
+		text-transform: uppercase;
+		margin-right: 22px;				
+	}
+	&__icons {		
+		display: flex;
+	}	
+	&__link {
+		border: 2px solid @gray-border;
+		display: inline-block;
+		border-radius: 50%;
+		width: 26px;
+		height: 26px;		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+		transition: all 0.7s ease;
+		&:hover {
+			background: @blue-bg;
+			border: 2px solid @blue-bg;
+		}
+	}
+	&__pic--vk {			
+		width: 7px; 
+		height: 10px;
+		background: url("../img/sprites.png") -80px -10px no-repeat;
+	}
+	&__pic--google {
+		width: 13px; 
+		height: 11px;
+		background: url("../img/sprites.png") -47px -10px no-repeat;
+	}
+	&__pic--fb {
+		width: 7px; 
+		height: 10px;
+		background: url("../img/sprites.png") -80px -10px;
+	}
+	&__pic--twitter {
+		width: 11px; 
+		height: 10px;
+		background: url("../img/sprites.png") -44px -43px;
+	}
+	&__counter {
+		padding: 9px 10px;
+		background: @gray;
+		position: relative;
+		margin-left: 5px;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: -5px;
+			top: 12px;		
+			width: 0;
+			height: 0;
+			border-top: 5px solid transparent;
+			border-right: 5px solid @gray;
+			border-bottom: 5px solid transparent;
+		}
+	}
+	
+}

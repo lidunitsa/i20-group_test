@@ -1,0 +1,40 @@
+/* conditions */
+.conditions {
+	padding: 15px 22px;
+	background: @gray;
+	width: 339px;
+	box-sizing: border-box;	
+	&__item {
+		a {
+			padding-left: 4px;
+		}
+		&:before {
+			content: "";
+			display: block;
+			float: left;		
+		}
+		&:nth-child(1) {
+			margin-bottom: 9px;
+		}
+	}
+	&__item--stock {
+		&:before {
+			content: "";
+			display: block;
+			width: 14px;
+			height: 10px;
+			background: url("../img/sprites.png") -10px -43px;
+			margin-right: 14px;
+		}
+	}
+	&__item--delivery {
+		&:before {
+			content: "";
+			display: block;
+			width: 17px;
+			height: 13px;
+			background: url("../img/sprites.png") -10px -10px;
+			margin-right: 11px;
+		}
+	}
+}
